@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+ 
+  margin: 0px;
+}
+.nameLogo {
+  height: 35px;
+  width: 35px;
+  
+  border-radius: 50%;
+  display: inline-block;
+}
+.Name {
+  margin-left: 12px;
+}
