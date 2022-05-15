@@ -2,17 +2,20 @@ import React from 'react'
 
 import './cards.css'
 
-const displayCards = () => {
+
+const displayCards = (prop) => {
+ // console.log(prop);
+  const { firstName, lastName, email } = prop
   return (
     <>
       <div className='card'>
         <div className = 'nameLogo' >
-            <h4>AA</h4>
+            
         </div>
 
         <div className = 'Name' >
-            <h4>Ankit Aman</h4>
-            <p><i class="fa-solid fa-user"></i>Client Manager  ankit@spottabl.com</p>
+            <h4>{firstName}</h4>
+            <p><i className="fa-solid fa-user"></i>{lastName} <i className="fas-duotone fas-period"></i>{email}</p>
         </div>
 
       </div>
