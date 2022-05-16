@@ -6,7 +6,7 @@ import './cards.css'
 const displayCards = (prop) => {
  // console.log(prop);
   const { firstName, lastName, email } = prop
-  console.log(prop.firstName)
+ // console.log(prop.firstName)
   return (
     <> 
       <div className='card'>

@@ -1,8 +1,8 @@
 import React from 'react'
-
-const displayCSM = () => {
+const displayCSM = (prop) => {
+ console.log(prop.displayArr)
   return (
-    <div>displayCSM</div>
+   <div>hi</div>
   )
 }
 

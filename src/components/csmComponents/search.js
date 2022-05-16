@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Select from 'react-select'
 
 import Card from './displayCards'
-
+import Show from './DisplayCSM'
 
 const temp = [
   {firstName: 'Jeffry', lastName: 'Osmund', email: 'josmund0@ask.com', position:'manager'},
@@ -17,8 +17,7 @@ const temp = [
   {firstName: 'Quintus', lastName: 'Swalough', email: 'qswalough9@csmonitor.com'},
   ]
 
-  var displayArr = [];
-
+  
 
 const Search = () => {
       
@@ -35,22 +34,21 @@ const Search = () => {
 
      
       
-      const handler = e =>{
-         displayArr = [];
-        //setDisp(e);
-        console.log('e value')
-        e.map((ele)=> {
-          
-          displayArr.push(ele.value)
-          console.log(displayArr);
-        })
-       } 
-      
-       
+      const [displayArr, setDisplayArray] = useState([]);
 
+      const handler = e =>{
+
+        e.map((ele) => {
+        setDisplayArray(prevarray => {
+        return [...prevarray, ele] })
+          })
+    }
+       
+      
         
   return (
   <>
+ 
    <div>
        <Select 
             options={options}
@@ -59,6 +57,8 @@ const Search = () => {
             onChange= {handler}
         /> 
     </div>
+    <Show displayArr = {displayArr} />
+    
   </>
   )
 }
