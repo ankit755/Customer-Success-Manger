@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 import './DisplayCSM.css'
-
 const DisplayCSM = (prop) => {
-  const [list, setList] = useState([])
+  let list = [];
   if (prop.displayArr)
     // empty array here to prevent from duplicates
     // list = []
@@ -11,22 +9,13 @@ const DisplayCSM = (prop) => {
       list.push(ele.value)
     })
 
-  if (prop.displayArr) {
-    prop.diplayArr.map((e) => setList((oldValue) => [...oldValue, e.value]))
-  }
-
-  const deleteItem = (id) => {
-    setList(list.splice(id, 1))
-  }
-
-
   return (
 
     <div>
 
       {
-        list.length > 0 && list.map((e, i) => {
-          const [key, firstName, lastName, position] = e.split(',');
+        list.length > 0 && list.map((e,i) => {
+          const [firstName, lastName, position] = e.split(',');
           return (<div key={i}>
 
             <div className='list' >
@@ -37,7 +26,7 @@ const DisplayCSM = (prop) => {
               </div>
 
               <div className='trash'>
-                <i className="fa-solid fa-trash fa-lg" onClick={deleteItem(i)}></i>
+                <i className="fa-solid fa-trash fa-lg" ></i>
               </div>
             </div>
           </div>)
@@ -49,6 +38,11 @@ const DisplayCSM = (prop) => {
 
   )
 }
+
+
+// CHILD COMPONENT
+
+
 
 
 export default DisplayCSM

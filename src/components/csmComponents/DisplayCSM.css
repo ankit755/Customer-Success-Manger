@@ -5,9 +5,10 @@
   .list{
    display:inline-flex;
    width: 100%;
+   
     margin-left: 0.5px;
     border: 0.5px solid #e2e1e1;
-    
+    border-radius: 2.5px;
     
   }
 

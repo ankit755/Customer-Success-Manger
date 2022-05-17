@@ -6,6 +6,7 @@
 .header{
     display:inline-flex;
     width: 100%;
+    margin: 25px;
 }
 .header_logo>img{
     margin-left: 25px;
@@ -13,9 +14,9 @@
     height: 80px;
 }
 .header_text{
-    margin-left: 55px;
+    margin-left: 35px;
     font-size: 40px;
 }
 .header_text .P{
-    font-size: 25px;
+    font-size: 20px;
 }

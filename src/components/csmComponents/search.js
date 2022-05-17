@@ -8,15 +8,15 @@ import './search.css'
 
 const temp = [
   { firstName: 'Jeffry', lastName: 'Osmund', position: "client manager", email: 'josmund0@ask.com' },
-  {firstName: 'Julian', lastName: 'Conkey', position: "assistent recruiter", email: 'jconkey1@mayoclinic.com' },
-  {  firstName: 'Goldi', lastName: 'Hayers', position: "talent aquisition", email: 'ghayers2@elegantthemes.com' },
+  { firstName: 'Julian', lastName: 'Conkey', position: "assistent recruiter", email: 'jconkey1@mayoclinic.com' },
+  { firstName: 'Goldi', lastName: 'Hayers', position: "talent aquisition", email: 'ghayers2@elegantthemes.com' },
   { firstName: 'Lurline', lastName: 'Petraitis', position: "senior manager", email: 'lpetraitis3@last.fm' },
-  {  firstName: 'Daisy', lastName: 'Ruddock', position: "Associate principal leadership", email: 'druddock4@sina.com.cn' },
+  { firstName: 'Daisy', lastName: 'Ruddock', position: "Associate principal leadership", email: 'druddock4@sina.com.cn' },
   { firstName: 'Corinna', lastName: 'Cumbers', position: "senior recuiter", email: 'ccumbers5@nymag.com' },
 
 ]
 
-var Array = [];
+
 
 const Search = () => {
 
@@ -26,13 +26,13 @@ const Search = () => {
   const [newArray, setNewArray] = useState([]);
 
   const PassValue = () => {
-    
+    setPass(true)
     setNewArray((old)=>
       [...old,...displayArr.slice()]
     )
-    
     setDisplayArray([])
-    setPass(true)
+
+
   };
   const options = temp.map((e) => {
     // console.log(e.firstName);
@@ -43,7 +43,7 @@ const Search = () => {
 
   const handler = e => {
     setDisplayArray([]) // to remove the previous values
-   
+    
     e.map((ele) => {
       setDisplayArray(prevarray => {
         return [...prevarray, ele]
