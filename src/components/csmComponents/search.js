@@ -7,12 +7,12 @@ import Show from './DisplayCSM'
 import './search.css'
 
 const temp = [
-  { firstName: 'Jeffry', lastName: 'Osmund', position: "client manager", email: 'josmund0@ask.com' },
-  { firstName: 'Julian', lastName: 'Conkey', position: "assistent recruiter", email: 'jconkey1@mayoclinic.com' },
-  { firstName: 'Goldi', lastName: 'Hayers', position: "talent aquisition", email: 'ghayers2@elegantthemes.com' },
-  { firstName: 'Lurline', lastName: 'Petraitis', position: "senior manager", email: 'lpetraitis3@last.fm' },
-  { firstName: 'Daisy', lastName: 'Ruddock', position: "Associate principal leadership", email: 'druddock4@sina.com.cn' },
-  { firstName: 'Corinna', lastName: 'Cumbers', position: "senior recuiter", email: 'ccumbers5@nymag.com' },
+  { firstName: 'Jeffry', lastName: 'Osmund', position: "Client Manager", email: 'josmund0@ask.com' },
+  { firstName: 'Julian', lastName: 'Conkey', position: "Assistent Recruiter", email: 'jconkey1@mayoclinic.com' },
+  { firstName: 'Goldi', lastName: 'Hayers', position: "Talent Aquisition", email: 'ghayers2@elegantthemes.com' },
+  { firstName: 'Lurline', lastName: 'Petraitis', position: "Senior Manager", email: 'lpetraitis3@last.fm' },
+  { firstName: 'Daisy', lastName: 'Ruddock', position: "Associate Principal leadership", email: 'druddock4@sina.com.cn' },
+  { firstName: 'Corinna', lastName: 'Cumbers', position: "Senior Recuiter", email: 'ccumbers5@nymag.com' },
 
 ]
 

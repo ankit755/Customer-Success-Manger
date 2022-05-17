@@ -11,10 +11,29 @@
 .nameLogo {
   height: 35px;
   width: 35px;
-  
+  text-align: center;
+  vertical-align: middle;
+ 
+  background-color: #D7DCFF;
   border-radius: 50%;
   display: inline-block;
 }
+
+.nameLogo>h5{
+  margin-top: 6px
+}
 .Name {
   margin-left: 12px;
+  font-weight: 550;
+}
+.fa-user{
+  color:#d2d1d1;
+  margin-left: 1px;
+  margin-right: 9px;
+}
+.fa-circle{
+  color: #d2d1d1;
+  margin-left: 1px;
+  margin-right: 9px;
+  font-size:0.005%;
 }

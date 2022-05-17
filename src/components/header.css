@@ -9,14 +9,20 @@
     margin: 25px;
 }
 .header_logo>img{
-    margin-left: 25px;
+    margin-left: 6px;
     width: 80px;
     height: 80px;
 }
 .header_text{
     margin-left: 35px;
     font-size: 40px;
+   
+}
+.header_text>h4{
+    font-weight: 200;
 }
 .header_text .P{
     font-size: 20px;
+    font-weight: 500;
+    color: #838384;
 }
