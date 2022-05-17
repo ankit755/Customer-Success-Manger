@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import './DisplayCSM.css'
-const displayCSM = (prop) => {
-  let list = [];
+
+const DisplayCSM = (prop) => {
+  const [list, setList] = useState([])
   if (prop.displayArr)
     // empty array here to prevent from duplicates
     // list = []
@@ -9,25 +11,35 @@ const displayCSM = (prop) => {
       list.push(ele.value)
     })
 
+  if (prop.displayArr) {
+    prop.diplayArr.map((e) => setList((oldValue) => [...oldValue, e.value]))
+  }
+
+  const deleteItem = (id) => {
+    setList(list.splice(id, 1))
+  }
+
+
   return (
 
     <div>
-      
-      {
-        list.map((e, i) => {
-          const [firstName,lastName, position] = e.split(',');
-          return (<div key={i}>
-             
-        <div className = 'list' >
-            <div className = 'list_text'>
-            <h4>{firstName} { lastName}</h4>
-            <p> {position} </p>
-            </div>
 
-            <div className='trash'>
-            <i className="fa-solid fa-trash fa-lg"></i>
+      {
+        list.length > 0 && list.map((e, i) => {
+          const [key, firstName, lastName, position] = e.split(',');
+          return (<div key={i}>
+
+            <div className='list' >
+              <div className='list_text'>
+                <h4>{firstName} {lastName}</h4>
+                <p> {position} </p>
+
+              </div>
+
+              <div className='trash'>
+                <i className="fa-solid fa-trash fa-lg" onClick={deleteItem(i)}></i>
+              </div>
             </div>
-        </div>
           </div>)
 
         })
@@ -39,9 +51,4 @@ const displayCSM = (prop) => {
 }
 
 
-// CHILD COMPONENT
-
-
-
-
-export default displayCSM
+export default DisplayCSM
