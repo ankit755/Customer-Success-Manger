@@ -5,7 +5,7 @@ import './cards.css'
 
 const displayCards = (prop) => {
  // console.log(prop);
-  const { firstName, lastName, email } = prop
+  const { firstName, lastName,position, email } = prop
  // console.log(prop.firstName)
   return (
     <> 
@@ -16,7 +16,7 @@ const displayCards = (prop) => {
 
         <div className = 'Name' >
             <h4>{firstName}</h4>
-            <p><i className="fa-solid fa-user"></i>{lastName} <i className="fas-duotone fas-period"></i>{email}</p>
+            <p><i className="fa-solid fa-user"></i>{position} <i className="fas-duotone fas-period"></i>{email}</p>
         </div>
 
       </div>

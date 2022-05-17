@@ -12,15 +12,21 @@ const displayCSM = (prop) => {
   return (
 
     <div>
-      <p>For test</p>
+      
       {
         list.map((e, i) => {
-          const [firstName,lastName, email, position] = e.split(',');
+          const [firstName,lastName, position] = e.split(',');
           return (<div key={i}>
              
-        <div className = 'Name' >
+        <div className = 'list' >
+            <div className = 'list_text'>
             <h4>{firstName} { lastName}</h4>
-            <p> {position} <i class="fa-solid fa-trash"></i></p>
+            <p> {position} </p>
+            </div>
+
+            <div className='trash'>
+            <i className="fa-solid fa-trash fa-lg"></i>
+            </div>
         </div>
           </div>)
 

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main{
+ margin-left: 25px;
+  background-color: #F8F9FE;
+  width: 90%;
+  height: auto;
+  
+}
+.Header_main{
+  padding-top: 20px;
+}
+.CSM_PARENT{
+ 
+  padding-top: 20px;
+  width: 50%;
+  border: 2px solid red ;
+  
+  box-shadow: 1px 1px 10px 5px rgba(203, 199, 199, 0.2); 
+}

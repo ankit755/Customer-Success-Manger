@@ -1,0 +1,22 @@
+.parent{
+    display: inline-flex;
+    width: 100%;
+}
+.search{
+    width:100%;
+}
+.btn>button{
+    background-color: #1E2FA1; /* Green */
+    border: none;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+

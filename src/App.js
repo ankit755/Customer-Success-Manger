@@ -7,8 +7,10 @@ import './App.css'
 function App() {
   return (
    <>
-    <div> <Header /> </div>
-    <div> <CSM /> </div>
+    <div className="main">
+    <div className ='Header_main'> <Header /> </div>
+    <div className="CSM_main"> <CSM /> </div>
+    </div>
    </>
   );
 }

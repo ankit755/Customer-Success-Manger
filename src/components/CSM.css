@@ -1,0 +1,18 @@
+.CSM_top{
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    margin-left: 25px;
+}
+
+.CSM_CHILD{
+    margin-left: 15px;
+    width :90%;
+}
+.CSM_text{
+    padding: 25px;
+    font-size: 25px;
+}
+.display{
+    padding-top: 25px;
+}
