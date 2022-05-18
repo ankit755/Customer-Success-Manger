@@ -8,7 +8,7 @@
  margin-left: 25px;
   background-color: hsl(228, 88%, 97%);
   width: 95%;
-  height: 100% !important;
+  height: auto !important;
   
 }
 .Header_main{
@@ -20,6 +20,7 @@
  
   padding-top: 20px;
   width: 80%;
+  height: auto;
   border: 2px solid red ;
   box-shadow: 1px 1px 10px 5px rgba(203, 199, 199, 0.2); 
 }
