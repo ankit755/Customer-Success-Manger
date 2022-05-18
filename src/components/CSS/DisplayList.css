@@ -1,57 +1,57 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  .list{
-    display:inline-flex;
-    width: 100%;
-    margin-left: 0.5px;
-    border-top: 0.5px  solid #e2e1e1;
-    border-right: 0.5px  solid #e2e1e1;
-    border-bottom: 0.5px  solid #e2e1e1;
-    border-left: 0.5px  solid #e2e1e1;
-    border-radius: 2.5px;
-    transition: transform 520ms;
-  }
-  
-  .list:hover {
-    transform: scale(1.03);
-    background-color: hsl(228, 88%, 97%);;
-  }
-  .list_logo {
-    height: 35px;
-    width: 35px;
-    margin-top: 25px;
-    margin-left: 15px;
-    text-align: center;
-    justify-content: center;
-    background-color: #D7DCFF;
-    border-radius: 50%;
-    
-  }
+  margin: 0;
+  padding: 0;
+}
+.list{
+  display:inline-flex;
+  width: 100%;
+  margin-left: 0.5px;
+  border-top: 0.5px  solid #e2e1e1;
+  border-right: 0.5px  solid #e2e1e1;
+  border-bottom: 0.5px  solid #e2e1e1;
+  border-left: 0.5px  solid #e2e1e1;
+  border-radius: 2.5px;
+  transition: transform 520ms;
+}
 
-  .list_logo>h5{
-    margin-top: 6px;
-  }
+.list:hover {
+  transform: scale(1.03);
+  background-color: hsl(228, 88%, 97%);;
+}
+.list_logo {
+  height: 35px;
+  width: 35px;
+  margin-top: 25px;
+  margin-left: 15px;
+  text-align: center;
+  justify-content: center;
+  background-color: #D7DCFF;
+  border-radius: 50%;
+  
+}
+
+.list_logo>h5{
+  margin-top: 6px;
+}
 
 
 .list_text{
-  width: 80%;
-  margin-left: 5px;
-  padding:16.5px;
-  margin-bottom: 1px;
-  font-weight: 550;
-  }
+width: 80%;
+margin-left: 5px;
+padding:16.5px;
+margin-bottom: 1px;
+font-weight: 550;
+}
 
 .list_text>h4{
-  font-size: large;
+font-size: large;
 
-  }
+}
 .fa-trash{
 margin-top: 25px;
 margin-left: 65px;
 color: #1E2FA1;
 }
 .fa-trash:hover{
-  color: red;
+color: red;
 }

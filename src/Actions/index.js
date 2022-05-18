@@ -12,4 +12,4 @@ export const deleteListItem = (id) => {
         type: "DELETE_LIST_ITEM",
         id
     }
-} 
+}

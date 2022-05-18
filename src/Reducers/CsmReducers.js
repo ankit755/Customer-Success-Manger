@@ -32,4 +32,3 @@ const CsmReducers = (state = initialData, action) => {
     }
 }
 
-export default CsmReducers;
