@@ -1,12 +1,12 @@
 import React from 'react'
 
-import './cards.css'
+import '../CSS/DisplayOption.css'
 
-
+// Template to display data in Label Field of Options Attribute
 const displayCards = (prop) => {
-  // console.log(prop);
+
   const { firstName, lastName, position, email } = prop
-  // console.log(prop.firstName)
+
   return (
     <>
       <div className='card'>
@@ -17,7 +17,7 @@ const displayCards = (prop) => {
         <div className='Name' >
           <h4>{firstName} {lastName}</h4>
           <p><i className="fa-solid fa-user"></i>{position}
-             <span>  <i class="fa-solid fa-circle"></i> </span>
+            <span>  <i className="fa-solid fa-circle"></i> </span>
             {email}</p>
         </div>
 

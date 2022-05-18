@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Select from 'react-select'
 
-import Card from './displayCards'
-import Show from './DisplayCSM'
+import Card from './DisplayOption'
+import Show from './DisplayList'
 
-import './search.css'
+import '../CSS/Search.css'
 
 const temp = [
   { firstName: 'Jeffry', lastName: 'Osmund', position: "Client Manager", email: 'josmund0@ask.com' },
@@ -13,42 +13,42 @@ const temp = [
   { firstName: 'Lurline', lastName: 'Petraitis', position: "Senior Manager", email: 'lpetraitis3@last.fm' },
   { firstName: 'Daisy', lastName: 'Ruddock', position: "Associate Principal leadership", email: 'druddock4@sina.com.cn' },
   { firstName: 'Corinna', lastName: 'Cumbers', position: "Senior Recuiter", email: 'ccumbers5@nymag.com' },
-
-]
-
-
+ ]
 
 const Search = () => {
 
-
-  const [pass, setPass] = useState(false)
+ const [pass, setPass] = useState(false)
   const [displayArr, setDisplayArray] = useState([]);
   const [newArray, setNewArray] = useState([]);
 
+
+  // passing the selected value for display and clearing search box
   const PassValue = () => {
     setPass(true)
-    setNewArray((old)=>
-      [...old,...displayArr.slice()]
+    setNewArray((old) =>
+      [...old, ...displayArr.slice()]
     )
     setDisplayArray([])
-
-
   };
+
+  // converting object in format accepted by options attribute
   const options = temp.map((e) => {
-    // console.log(e.firstName);
     return {
       value: Object.values(e).join(','), label: <Card firstName={e.firstName} lastName={e.lastName} position={e.position} email={e.email} />
     };
   })
 
+  //Handling values coming frm onChange 
   const handler = e => {
     setDisplayArray([]) // to remove the previous values
-    
+
     e.map((ele) => {
       setDisplayArray(prevarray => {
         return [...prevarray, ele]
       })
     })
+
+
   }
 
   return (
@@ -70,8 +70,8 @@ const Search = () => {
           <button onClick={PassValue}>ADD CSM</button>
         </div>
       </div>
-
-
+      
+        {/* Passing the data collected from select box*/}
       {pass === true && <Show displayArr={newArray} />}
 
     </>

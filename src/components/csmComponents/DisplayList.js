@@ -1,6 +1,11 @@
-import React from 'react'
-import './DisplayCSM.css'
-const DisplayCSM = (prop) => {
+import React, { useState, useEffect } from 'react'
+import {useSelector, useDispatch } from "react-redux"  
+import '../CSS/DisplayList.css'
+
+// Template to display the data getting 
+//from onchange & then with button click
+
+const DisplayList = (prop) => {
   let list = [];
   if (prop.displayArr)
     // empty array here to prevent from duplicates
@@ -26,7 +31,7 @@ const DisplayCSM = (prop) => {
 
               </div>
               <div className='trash'>
-                <i className="fa-solid fa-trash fa-lg" ></i>
+                <i className="fa-solid fa-trash fa-lg" onClick={() => dispatch(deleteTodo(elem.id))}></i>
               </div>
             </div>
           </div>)
@@ -41,8 +46,4 @@ const DisplayCSM = (prop) => {
 
 
 // CHILD COMPONENT
-
-
-
-
-export default DisplayCSM
+export default DisplayList

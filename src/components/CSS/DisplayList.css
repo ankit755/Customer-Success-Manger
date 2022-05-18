@@ -11,9 +11,13 @@
     border-bottom: 0.5px  solid #e2e1e1;
     border-left: 0.5px  solid #e2e1e1;
     border-radius: 2.5px;
-    
+    transition: transform 520ms;
   }
-
+  
+  .list:hover {
+    transform: scale(1.03);
+    background-color: hsl(228, 88%, 97%);;
+  }
   .list_logo {
     height: 35px;
     width: 35px;
@@ -47,4 +51,7 @@
 margin-top: 25px;
 margin-left: 65px;
 color: #1E2FA1;
+}
+.fa-trash:hover{
+  color: red;
 }

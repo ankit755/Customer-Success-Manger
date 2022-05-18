@@ -24,7 +24,10 @@
 }
 .Name {
   margin-left: 12px;
-  font-weight: 550;
+  font-weight: 50;
+}
+.Name>p{
+  font-weight: 600;
 }
 .fa-user{
   color:#d2d1d1;

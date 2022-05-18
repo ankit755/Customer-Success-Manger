@@ -1,13 +1,12 @@
 import React from 'react'
 
-import'./CSM.css';
-
-import Search from './csmComponents/search'
-import Display from './csmComponents/DisplayCSM'
-// import DC from './csmComponents/displayCards'
+import Search from './csmComponents/Search'
+import Display from './csmComponents/DisplayList'
 
 
+import './CSS/CSM.css' 
 
+// component containg components od Search Bar & DisplayList
 const CSM = () => {
   return (
     <>
