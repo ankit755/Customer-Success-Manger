@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Search from './csmComponents/Search'
+import Search from './csmComponents/search'
 import Display from './csmComponents/DisplayList'
 
 

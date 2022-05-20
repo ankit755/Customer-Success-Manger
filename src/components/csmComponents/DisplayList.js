@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../CSS/DisplayList.css'
-const DisplayList = (prop) => {
+  const DisplayList = (prop) => {
   const [data, setData] = useState(new Set())
 
   useEffect(() => {
